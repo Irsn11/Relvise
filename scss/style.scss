@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+body {
+	font-family: var(--font);
+	font-weight: 500;
+	font-size: 14px;
+	font-weight: 500;
+	height: 100%;
+	line-height: 1;
+	color: var(--text-color);
+	background-color: var(--ligth-back);
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	border-color: #fafafa;
+}
+p {
+	color: var(--second-text-color);
+}
+._container {
+	max-width: 1046px;
+	margin: 0px auto;
+	padding: 0px 15px;
+	box-sizing: content-box;
+}
+.page {
+	flex: 1 1 auto;
+}
+
+._ibg {
+	position: relative;
+
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+}
+.header-block {
+	text-align: center;
+	&__title {
+		font-weight: bold;
+		font-size: 40px;
+		line-height: calc(57 / 40 * 100%);
+		margin: 10px;
+	}
+	&__title:not(:last-child) {
+		margin: 10px;
+	}
+	&__description {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: calc(20 / 14 * 100%);
+	}
+}
+
+@media (max-width: 992px) {
+	.header-block {
+		&__title {
+			font-size: 35px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.header-block {
+		&__title {
+			font-size: 30px;
+		}
+	}
+}
+@import "null";
+@import "var";
+@import "header";
+@import "footer";
+@import "main-block";
+@import "services";
+@import "advantages";
+@import "practice";
+// @import "";
+// @import "";
+// @import "";
+// @import "";
+// @import "";
