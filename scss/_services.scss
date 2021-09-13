@@ -1,11 +1,11 @@
 .page {
 	&__services {
+		margin: -111px 0px 0px 0px;
+		position: relative;
+		z-index: 60;
 	}
 }
 .services {
-	margin: -111px 0px 0px 0px;
-	position: relative;
-	z-index: 60;
 	&__container {
 	}
 
