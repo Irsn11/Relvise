@@ -3,6 +3,7 @@
 body {
 	font-family: var(--font);
 	font-weight: 500;
+	letter-spacing: 0.2px;
 	font-size: 14px;
 	font-weight: 500;
 	height: 100%;
@@ -78,7 +79,6 @@ p {
 @import "null";
 @import "var";
 @import "header";
-@import "footer";
 @import "main-block";
 @import "services";
 @import "advantages";
@@ -88,4 +88,5 @@ p {
 @import "subscribe";
 @import "getintouch";
 @import "contactus";
+@import "footer";
 // @import "";

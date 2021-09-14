@@ -1,5 +1,135 @@
 .footer {
-	&__main {
+	&__top {
+		background-color: #17213c;
+		padding: 35px 0px;
+		color: #fff;
+	}
+
+	&__row {
 		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+	&__column {
+		flex: 0 1 16.667%;
+		padding: 15px 15px;
+		&:last-child {
+			flex: 0 1 33.334%;
+		}
+	}
+
+	&__menu {
+	}
+
+	&__label {
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 150%;
+		letter-spacing: 0.1px;
+		margin-bottom: 20px;
+	}
+
+	&__contacts {
+	}
+
+	&__bottom {
+		padding: 50px 0px;
+	}
+	&__copy {
+		font-weight: 600;
+		line-height: 171%;
+		margin-bottom: 15px;
+	}
+	.menu-footer {
+		&__list {
+			& > *:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+
+		&__item {
+		}
+
+		&__link {
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 171%;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	.contacts-footer {
+		display: flex;
+		flex-direction: column;
+		&__item {
+			display: flex;
+			align-items: center;
+			min-height: 30px;
+			padding-left: 30px;
+			font-weight: 600;
+			line-height: 171%;
+			&:hover {
+				text-decoration: underline;
+			}
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+		&_item-phone {
+			padding-left: 30px;
+			background: url(../img/icons/footer/1.svg) 0 0 no-repeat;
+		}
+
+		&_item-map {
+			background: url(../img/icons/footer/2.svg) 0 0 no-repeat;
+		}
+
+		&_item-email {
+			background: url(../img/icons/footer/2.svg) 0 0 no-repeat;
+		}
+	}
+	.social {
+		display: flex;
+		align-items: center;
+		& > *:not(:last-child) {
+			padding-right: 20px;
+		}
+		&__item {
+		}
+	}
+}
+
+@media (min-width: 767px) {
+	.footer {
+		&__container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__copy {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.footer {
+		&__column {
+			flex: 0 1 25%;
+			&:last-child {
+				flex: 1 1 100%;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.footer {
+		&__column {
+			flex: 0 1 50%;
+			&:last-child {
+				flex: 1 1 100%;
+			}
+		}
 	}
 }
