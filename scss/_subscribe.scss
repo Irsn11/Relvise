@@ -56,6 +56,10 @@
 		color: #fff;
 		padding: 0px 22px;
 		min-height: 58px;
+		transition: color 0.3s, background-color 0.3s;
+		&:hover {
+			background-color: #b95933;
+		}
 	}
 }
 @media (min-width: 1070px) {

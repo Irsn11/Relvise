@@ -38,7 +38,6 @@
 	&__copy {
 		font-weight: 600;
 		line-height: 171%;
-		margin-bottom: 15px;
 	}
 	.menu-footer {
 		&__list {
@@ -98,18 +97,11 @@
 		&__item {
 		}
 	}
-}
 
-@media (min-width: 767px) {
-	.footer {
-		&__container {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-		&__copy {
-			margin-bottom: 0;
-		}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
 
@@ -130,6 +122,13 @@
 			&:last-child {
 				flex: 1 1 100%;
 			}
+		}
+		&__container {
+			flex-direction: column;
+		}
+		&__copy {
+			margin-bottom: 35px;
+			text-align: center;
 		}
 	}
 }
